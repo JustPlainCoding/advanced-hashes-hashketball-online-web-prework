@@ -247,6 +247,7 @@ if home_points > away_points
 else
   return game_hash[:away][:team_name]
 end
+end
 
 def player_with_longest_name
 end
