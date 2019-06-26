@@ -250,6 +250,19 @@ end
 end
 
 def player_with_longest_name
+  longest_name = ""
+   game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |player_container|
+          player_container.each do |name, stats|
+            binding.pry
+            end
+            end
+          end
+        end
+      end
+    end
 end
 
 def long_name_steals_a_ton
