@@ -256,12 +256,14 @@ def player_with_longest_name
       if attribute == :players
         data.each do |player_container|
           player_container.each do |name, stats|
-            binding.pry
+            if name.length > longest_name.length
+              longest_name = name
             end
           end
         end
       end
     end
+  longest_name
 end
 
 def long_name_steals_a_ton
