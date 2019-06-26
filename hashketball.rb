@@ -232,7 +232,7 @@ def winning_team
       if attribute == :players
         data.each do |player_container|
           player_container.each do |name, stats|
-            if location = :home
+            if location == :home
               home_points += stats[:points]
             else 
               away_points += stats[:points]
