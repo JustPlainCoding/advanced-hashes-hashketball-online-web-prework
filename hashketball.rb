@@ -157,11 +157,12 @@ def player_numbers(team)
         if attribute == :players
           data.each do |data_container|
             data_container.each do |name, stats|
-              binding.pry
+              numbers << stats[:number]
             end
           end
         end
       end
     end
   end
+  numbers
 end
