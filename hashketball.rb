@@ -276,6 +276,7 @@ def long_name_steals_a_ton?
         data.each do |player_container|
           player_container.each do |name, stats|
             if stats[:steals] > most_steals
+              most_steals = stats[:steals]
               most_steals_player = name
               binding.pry
             end
