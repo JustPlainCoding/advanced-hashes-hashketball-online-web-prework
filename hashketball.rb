@@ -277,12 +277,12 @@ def long_name_steals_a_ton?
           player_container.each do |name, stats|
             if stats[:steals] > most_steals
               most_steals_player = name
+              binding.pry
             end
           end
           end
         end
       end
     end
-  binding.pry
   return most_steals_player == player_with_longest_name
 end
