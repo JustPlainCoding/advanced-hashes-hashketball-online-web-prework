@@ -233,7 +233,9 @@ def winning_team
         data.each do |player_container|
           player_container.each do |name, stats|
             if location = :home
-              home_points
+              home_points += stats[:points]
+            else 
+              away_points += stats[:points]
             end
             end
           end
