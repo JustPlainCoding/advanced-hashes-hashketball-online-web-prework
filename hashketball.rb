@@ -205,8 +205,23 @@ rebounds
 end
 
 def most_points_scored
- player_with_most = ""
- 
+  most_points = 0
+  player_with_most = ""
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |player_container|
+          player_container.each do |name, stats|
+            if stats[:points] > most_points
+              most_points = stats[:points]
+              player_with_most = name
+              end
+            end
+          end
+        end
+      end
+    end
+  player_with_most
 end
 
 def winning_team
