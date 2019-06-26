@@ -156,5 +156,6 @@ def player_numbers(team)
       team_data.each do |attribute, data|
         binding.pry
       end
+    end
   end
 end
