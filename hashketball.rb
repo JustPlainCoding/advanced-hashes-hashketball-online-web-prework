@@ -183,3 +183,20 @@ def player_stats(player)
     end
   nil
 end
+
+def big_shoe_rebounds
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |player_container|
+          player_container.each do |name, stats|
+            if name == player
+              return stats
+            end
+            end
+          end
+        end
+      end
+    end
+  nil
+end
