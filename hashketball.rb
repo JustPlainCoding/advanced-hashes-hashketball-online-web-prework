@@ -258,7 +258,6 @@ def player_with_longest_name
           player_container.each do |name, stats|
             binding.pry
             end
-            end
           end
         end
       end
