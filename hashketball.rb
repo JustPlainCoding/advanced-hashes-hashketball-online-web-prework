@@ -132,3 +132,5 @@ def shoe_size(player)
     game_hash[:away][:players][0][player][:shoe]
   end
 end
+
+def 
