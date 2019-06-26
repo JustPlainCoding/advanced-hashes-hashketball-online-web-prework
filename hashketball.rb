@@ -148,3 +148,7 @@ def team_names
   end
 teams
 end
+
+def player_numbers(team)
+  game_hash.each do |location, team_data|
+end
