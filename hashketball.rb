@@ -172,9 +172,13 @@ def player_stats(player)
     team_data.each do |attribute, data|
       if attribute = :players
         data.each do |player_container|
-          player_container.each do ||
+          player_container.each do |name, stats|
+            if name == player
+              return stats
+            end
           end
         end
       end
     end
+  nil
 end
