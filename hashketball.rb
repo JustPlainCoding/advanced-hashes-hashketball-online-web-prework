@@ -119,5 +119,8 @@ end
 
 def num_points_scored(player)
   if game_hash[:home][:players][0].has_key?(player)
+    game_hash[:home][:players][0][player][:points]
+  else
+    game_hash
   end
 end
