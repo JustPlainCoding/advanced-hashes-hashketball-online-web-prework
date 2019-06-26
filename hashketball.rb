@@ -225,6 +225,20 @@ def most_points_scored
 end
 
 def winning_team
+  home_points = 0
+  away_points = 0
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |player_container|
+          player_container.each do |name, stats|
+            if location = :home
+            end
+            end
+          end
+        end
+      end
+    end
 end
 
 def player_with_longest_name
