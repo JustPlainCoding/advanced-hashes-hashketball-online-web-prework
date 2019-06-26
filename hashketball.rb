@@ -155,6 +155,9 @@ def player_numbers(team)
     if team_data[:team_name] == team 
       team_data.each do |attribute, data|
         if attribute == :players
+          data.each do |data_item|
+            binding.pry
+          end
       end
     end
   end
